@@ -91,22 +91,22 @@
 // findSameName(user1, user2)
 // 2 - Exercise
 // 1 - Task
-const size = prompt("Enter size");
-let list = [];
-function userNameList() {
-    if (Number(size)) {
-        for (let i = 0; i < Number(size); i++) {
-            let value = prompt("Enter Name");
-            const data = {
-                id: Number(i + 1),
-                name: value
-            };
-            list.push(data);
-        }
-    }
-}
-userNameList();
-console.log(list);
+// const size:string | null = prompt("Enter size")
+// let list:{id:number, name:string  | null}[] = []
+// function userNameList(){
+//     if(Number(size)){
+//         for(let i = 0; i < Number(size); i++){
+//            let value:string | null = prompt("Enter Name")
+//            const data = {
+//             id:Number(i+1),
+//             name:value
+//            }
+//           list.push(data)
+//         }
+//     }
+// }
+// userNameList()
+// console.log(list)
 // userNameList(size)
 // 2 - Task
 // const array:number[] = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,6]
