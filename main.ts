@@ -119,23 +119,23 @@
 
 // 1 - Task
 
-const size:string | null = prompt("Enter size")
-let list:{id:number, name:string  | null}[] = []
-function userNameList(){
-    if(Number(size)){
-        for(let i = 0; i < Number(size); i++){
-           let value:string | null = prompt("Enter Name")
-           const data = {
-            id:Number(i+1),
-            name:value
-           }
+// const size:string | null = prompt("Enter size")
+// let list:{id:number, name:string  | null}[] = []
+// function userNameList(){
+//     if(Number(size)){
+//         for(let i = 0; i < Number(size); i++){
+//            let value:string | null = prompt("Enter Name")
+//            const data = {
+//             id:Number(i+1),
+//             name:value
+//            }
 
-          list.push(data)
-        }
-    }
-}
-userNameList()
-console.log(list)
+//           list.push(data)
+//         }
+//     }
+// }
+// userNameList()
+// console.log(list)
 
 
 // userNameList(size)
