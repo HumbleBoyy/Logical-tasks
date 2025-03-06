@@ -1,6 +1,20 @@
 
 //// 8-chi oy ikkinchi dars
 
+// 1 - Task
+
+let list:Array<number | string | null> = []
+function fn(num:number){
+  let value:string | number | null = prompt("Enter Number/Text")
+  list.push(value)
+  let newNumber = num - 1
+  if(newNumber > 0){
+    fn(newNumber)
+  }
+}
+
+fn(3)
+console.log(list)
 
 // 2 - Task
 // const arr1:(number | boolean | null)[] = [5,6,true,null,8]
@@ -41,42 +55,42 @@
 // console.log(mainArray.sort((a,b)=> a - b))
 
 // 5-Task
-interface CarsType  {
-    id:number,
-    name:string,
-    price:number
-   }
+// interface CarsType  {
+//     id:number,
+//     name:string,
+//     price:number
+//    }
 
-const carsArray:CarsType[] = [
-    {
-      id:1,
-      name:"BMW",
-      price:89000
-    },
-    {
-        id:2,
-        name:"Buggati",
-        price:890000
-    },
-    {
-        id:3,
-        name:"Spark",
-        price:19000
-    },
-    {
-        id:4,
-        name:"Aston",
-        price:9000
-    },
-    {
-        id:5,
-        name:"Abudi",
-        price:129000
-    }
-]
+// const carsArray:CarsType[] = [
+//     {
+//       id:1,
+//       name:"BMW",
+//       price:89000
+//     },
+//     {
+//         id:2,
+//         name:"Buggati",
+//         price:890000
+//     },
+//     {
+//         id:3,
+//         name:"Spark",
+//         price:19000
+//     },
+//     {
+//         id:4,
+//         name:"Aston",
+//         price:9000
+//     },
+//     {
+//         id:5,
+//         name:"Abudi",
+//         price:129000
+//     }
+// ]
 
-const newArrangment = carsArray.sort((a,b)=> a.price - b.price && a.name.localeCompare(b.name))
-console.log(newArrangment)
+// const newArrangment = carsArray.sort((a,b)=> a.price - b.price && a.name.localeCompare(b.name))
+// console.log(newArrangment)
 
 
 // 6 - Task
@@ -87,17 +101,17 @@ console.log(newArrangment)
 // }
 
 // 7 - Task
-const text:string | number  = 1324171
+// const text:string | number  = 1324171
 
-function reverseText(text2:string | number):void{
-    let newText:string | number  = ""
-   if(typeof text2 === "string"){
-     newText =  text2.split("").reverse().join("")
-     console.log(newText)
-   }else{
-     newText =  String(text2).split("").reverse().join("")
-     console.log(Number(newText))
-   }
+// function reverseText(text2:string | number):void{
+//     let newText:string | number  = ""
+//    if(typeof text2 === "string"){
+//      newText =  text2.split("").reverse().join("")
+//      console.log(newText)
+//    }else{
+//      newText =  String(text2).split("").reverse().join("")
+//      console.log(Number(newText))
+//    }
    
-}
-reverseText(text)
+// }
+// reverseText(text)
