@@ -12,6 +12,8 @@ function fn(num) {
 }
 fn(3);
 console.log(list);
+const maxValue = Math.max(...list);
+console.log(maxValue);
 // 2 - Task
 // const arr1:(number | boolean | null)[] = [5,6,true,null,8]
 // const arr2:(number | boolean | null)[] = [0,2,6,false,6]
